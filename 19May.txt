@@ -1,0 +1,233 @@
+    1  ls -lr
+    2  ls -lr
+    3  cd/
+    4  cd .
+    5  cd ..
+    6  cd ..
+    7  ls
+    8  cd ..
+    9  ls
+   10  vi 1st.sh
+   11  bash 1st.sh
+   12  vi 1st.sh
+   13  bash 1st.sh
+   14  cd tmp
+   15  ls
+   16  vi 1st.sh
+   17  cd .
+   18  cd ..
+   19  vi 1st.sh
+   20  clear
+   21  vi 2nd.sh
+   22  bash 2nd.sh
+   23  bash 2nd.sh
+   24  vi 2nd.sh
+   25  bash 2nd.sh
+   26  vi 2nd.sh
+   27  bash 2nd.sh
+   28  vi 2nd.sh
+   29  bash 2nd.sh
+   30  vi 2nd.sh
+   31  bash 2nd.sh
+   32  vi 2nd.sh
+   33  bash 2nd.sh
+   34  vi 2nd.sh
+   35  bash 2nd.sh
+   36  vi 2nd.sh
+   37  bash 2nd.sh
+   38  vi 2nd.sh
+   39  bash 2nd.sh
+   40  clear
+   41  vi 3rd.sh
+   42  bash 3rd.sh
+   43  vi 3rd.sh
+   44  ls
+   45  mkdir test
+   46  cd test 
+   47  cat abc.txt
+   48  cat aa.txt
+   49  ls
+   50  clear
+   51  cat>abc.txt
+   52  ls
+   53  cat>xyz.txt
+   54  ls
+   55  cat>pqr.txt
+   56  ls
+   57  cd ..
+   58  ls
+   59  vi 4th.sh
+   60  vi 4th.sh
+   61  cd test
+   62  vi 4th.sh
+   63  bash 4th.sh
+   64  ls
+   65  ls -la
+   66  cd home
+   67  cd 
+   68  pwd
+   69  su -centos
+   70  su - centos
+   71  cd /usr/local
+   72  git clone https://github.com/tawarechetan/test.git
+   73  cd test
+   74  git branch
+   75  git branch test
+   76  git branch
+   77  git branch test2
+   78  git branch
+   79  git branch -d test2
+   80  git branch
+   81  vim file1
+   82  git status
+   83  git add file1
+   84  git commit -m "update fix"
+   85  git branch
+   86  cat file1
+   87  git checkout test
+   88  vim file2
+   89  git branch
+   90  git status
+   91  git add file2
+   92  git commit -m "update fix on file 2"
+   93  git branch
+   94  git merge test
+   95  git checkout master
+   96  git branch
+   97  vim file2
+   98  git merge test
+   99  vim file2
+  100  git add file2
+  101  git commit -m "update fix on file 2 on masters"
+  102  git merge test
+  103  vim file2
+  104  git commit -m "update fix on file 2 on masters"
+  105  git add file2
+  106  git commit -m "update fix on file 2 on conflit"
+  107  git push 
+  108  git branch
+  109  vim file2
+  110  git add file2
+  111  git commit -m "update fix on file 2 on 18"
+  112  vim file2
+  113  git add file2
+  114  git commit -m "update fix on file 2 on 19"
+  115  git branch
+  116  git checkout test
+  117  git rebase master
+  118  git log --oneline
+  119  git remote -v
+  120  git branch -r
+  121  git fetch
+  122  git pull
+  123  history
+  124  history >/home/centos/18may.tst
+  125  ls -la
+  126  cd 
+  127  mkdir test1
+  128  ls -la
+  129  cd test1
+  130  la -la
+  131  ls -la
+  132  git init
+  133  ls -la
+  134  history
+  135  history >/home/centos/18may.txt
+  136  sudo su -
+  137  sudo su -
+  138  ls
+  139  cd temp
+  140  ls
+  141  cd..
+  142  cd ..
+  143  cd..
+  144  cd ..
+  145  ls
+  146  cd..
+  147  cd ..
+  148  ls
+  149  clear
+  150  cd /usr/local/
+  151  git clone 
+  152  git clone https://github.com/tawarechetan/test.git
+  153  yum install git
+  154  git clone https://github.com/tawarechetan/test.git
+  155  ls
+  156  cd test
+  157  vi test.txt
+  158  ls -l
+  159  ls -la
+  160  git status
+  161  git add test.txt 
+  162  git status
+  163  pwd
+  164  ls -l
+  165  touch file1 file2 file3
+  166  git status
+  167  git add .
+  168  pwd
+  169  ls -l
+  170  git config --global user.email "taware.chetan09@gmail.com"
+  171  git config --global user.name "CHETAN TAWRE"
+  172  cat ~/.gitconfig
+  173  git status
+  174  git commit -m "my first commit"
+  175  git status
+  176  git push
+  177  git log
+  178  git log --oneline
+  179  vim file1
+  180  ls- l
+  181  ls -l
+  182  vim file1
+  183  yum istall vim
+  184  yum install vim
+  185  vim file1
+  186  git staus
+  187  git status
+  188  git push
+  189  git status
+  190  git log --oneline
+  191  git status
+  192  git add .
+  193  git push
+  194  git log --oneline
+  195  vim file1
+  196  git add .
+  197  git commit -m "Changes in file 1"
+  198  git status
+  199  git push
+  200  git log --oneline
+  201  git revert d89e0f6
+  202  git log --state
+  203  git log --states
+  204  git log --stat
+  205  whoami
+  206  cd /usr/local
+  207  git init
+  208  git clone https://github.com/tawarechetan/test.git
+  209  cd test/
+  210  git branch
+  211  branch chekout master
+  212  git checkout master
+  213  vim file4
+  214  git add file4
+  215  git status
+  216  git stash save "writing file4 "
+  217  git stash list
+  218  git stash listcat file4
+  219  git stash list
+  220  vim file4
+  221  git add file4
+  222  git status
+  223  git commit -m "Changes in file4"
+  224  git status
+  225  git log --oneline
+  226  git stash list
+  227  git stash pop stash@{0}
+  228  vim file4
+  229  git add file4
+  230  git commit -m "Changes in file4 after stash"
+  231  git log --oneline
+  232  history
+  233  history >19May.txt
