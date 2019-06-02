@@ -1,0 +1,302 @@
+
+
+Jenkin username admin                       pass-         4587----n---@
+
+
+
+************************19 may 2019**********************
+
+
+-sudo su -
+-cd /usr/local
+-git init
+
+-git clone htttp git address
+
+vim file4
+ -git add file4
+-git status
+________________--above is staging__________________--------
+git reset HEAD --filename
+git rm -f filename             ------to remove file from staging (it will permentaly delet file)
+
+----------------------Stashing-------------------
+
+localy park ur changens which r not commited is knows as stash
+create a file 
+add it
+
+
+-git stash save "writing file " --------comments are important to identify {0} or {1} or {2}
+-git stash list -------to see satsh{0} or {1} or {2}
+-git stash pop stash@{0}  -------- to pop specific from stash
+
+ commit the file after done
+
+
+git reset --mixed
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+*******JDK AND MEVAN********
+
+mevan is built toool
+it downlod java libriries from mevan repository
+its projet configured bu porject obj modek 
+project hosted by apache -jakatrta 
+
+used for java projects
+
+it also resolve consicutive dependencies automatically 
+
+
+MEVAN life cycle
+
+validate------>compile----->test----->package---->install------>deploy
+
+cd /usr/local
+mkdir myproject
+
+cd myproject
+
+-mvn archetype:generate -DgroupId=com.myproject.app -DartifactId=myapp -Darchtype-quickstart -DinteractiveMode=false
+or
+-mvn archetype :generate -DgroupId=com.myproject.app -DartifectId=myapp -DarchetypeArtifactId=maven-archetype-quickstart -Dinteractivemode=false
+_____________________________________________________________________________________________________________________________
+
+
+
+
+
+**********************************25 may 2109************************
+
+
+cd my app
+tree
+if tree is noy installes then
+yum  install tree -y -q
+
+
+[root@ip-172-31-5-26 myapp]# tree
+.
++-- pom.xml
++-- src
+    +-- main(build Code)
+    ¦   +-- java
+    ¦       +-- com(group iD)
+    ¦           +-- myproject
+    ¦               +-- app
+    ¦                   +-- App.java
+    +-- test(test code)
+        +-- java
+            +-- com
+                +-- myproject
+                    +-- app
+                        +-- AppTest.java
+
+
+are 3 lyfe cycle of Mavan
+default(Project deployment 
+clen (project cleaning
+site (creaion of project site
+
+
+Build Phases are (tell in sequence) also refer MEVAN Web site
+1.validate (validate project and necessry info)
+2.compile(compile source code)
+3.test(unte testing frame work for testing)
+4.package (take compile code and packege  it in distributed format like JAR ,WAR)
+5.verify
+6.intall(install pack in local repository)
+7.deploy (copy final packages to remote repository)
+
+
+-vim pom.xml
+
+
+its having 
+project
+modelversion ----its alwys 4..0.0 we will not decide it created automatocally
+artifact id
+version
+
+-----------------------------------------------
+difference in JAR WAR EAR
+jar file encapsulates one or more java classes
+jar are lowest 
+used in j2ee for packinging client side java applicn
+
+
+WAR is module gets loaded in to WAR container of java appln server 
+min reqmnt of WAR 
+is WEB.inf___> inside that web.xml
+java app server has 2 containrs(runtime envirnment) web container(it requre  requre web module to be packaged as WAR file )  & EJR(It consists of one or more modules that can be web modules (WAR)  and EJB (JAAR ))
+
+stanalone web contan such as tomcat and jetty dont suppot EAR files coxz its are not full  fleshed appn servers 
+_____________________________________________________________________________________________________________________
+
+-mvn clean install
+ or mvn install
+it will give target dir
+-java -cp target/myapp-1.0-SNAPSHOT.jar com.myproject.app.App
+
+
+_______________________________________________________________________________________________
+Build tools
+MAVAN
+ANT
+GRIDDLE
+
+_______________________________________________________________________
+-mvn install -X
+
+repositorys in maven
+
+local 
+central
+remote
+_________________________________________________________________
+find / -name setting.xml
+
+to find stiing xml file
+_______________________________________________________
+
+vim /usr/local/maven/conf/settings.xml
+________________________________________________________
+cd ~/.m2/repository
+___________________________________
+
+#################26 may ##################
+
+cd /usr/local
+install tomcat
+wget http://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz
+
+
+____________________________________________________________________
+on jenkin browser 
+for master branch
+
+on Source Code Management ------>Branches to build------->origin/master
+
+
+on Post-build Actions----->Repository URL-----> http://172.31.2.140:8081/repository/maven-releases/  
+
+
+###################################################01 JUNE#############################################
+
+
+
+cd /usr/local
+
+
+create manualy JAR
+
+by using mvn archetype:generate -DgroupId=com.myproj.app -DartifactId=myapp(any new name) -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn package
+
+mvn clean install
+
+vim src/main/java/com/myproject/app/App.java
+  
+check output bay java -cd --------
+
+now add it (pom.xml and src ) to git repository
+ 
+___________________________________________________________________________________________________________________
+JENKIN
+ with more  thn 1lck activ website 
+automation server
+initially developed by kohsuke kawaguchi in 2014 in sun 
+ he got tired of bulid  wanted to knw way to 
+
+
+jenking is cress plotform with CD/CI app
+makes eay to integrate changes to project
+it allows u to continous delive software by providung to define built piprlines
+it offes
+easy istallation,easy config,reach pluging ecosystem,extensiblity,distributed builds,
+it has 1000 plugins  to make wok easy
+it is written in java hence it can be portable to all major platforms
+
+
+
+-cd usr/usr/
+cd bin
+./startup.sh
+
+
+cd ~/.jenkins               (home of jenkins)
+#############################################################2 JUNE######################################
+
+to triigr build remotly
+curl http://18.218.160.219:8080/jenkins/job/hello/build
+
+OR
+curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build
+
+(Before Spcial caracter in pasword use \ )
+
+metion tokan on Build Triggers--->Trigger builds remotely on jenkin website
+
+on cmd
+
+cd /usr/local/jenkins/webapps/
+
+curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+
+OR
+
+curl -u admin:45871111nilu@ http://@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+
+WIHOut TOKEN
+
+REMOVE FROM Manage Jenkins___>Configure Global Security---->CSRF Protection------>Prevent Cross Site Request Forgery exploits(UNCHECK IT)
+
+
+
+curl -X POST -u admin:45871111nilu@ http://@18.218.160.219:8080/jenkins/job/hello/build
+
+
+
+
+	
+********Matrix Authorization Strategy Plugin istall from manage plgins for adding user
+
+
+
+Manage Jenkins------manage user----creat user
+
+
+
+Configure Global Security--------Authorization-------->Project-based Matrix Authorization Strategy
+add user or group
+give permissions therre
+____________________________________________________
+
+
+Gneral-----This project is parameterized------add parameter------string parameter
+
+then go to 
+
+Post Steps----------------Add post-build step------Execute shell(for linux,you can add windows)-----give command i.e script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
