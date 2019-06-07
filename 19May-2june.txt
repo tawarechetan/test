@@ -86,11 +86,11 @@ yum  install tree -y -q
 +-- pom.xml
 +-- src
     +-- main(build Code)
-    ¦   +-- java
-    ¦       +-- com(group iD)
-    ¦           +-- myproject
-    ¦               +-- app
-    ¦                   +-- App.java
+    Â¦Â Â  +-- java
+    Â¦Â Â      +-- com(group iD)
+    Â¦Â Â          +-- myproject
+    Â¦Â Â              +-- app
+    Â¦Â Â                  +-- App.java
     +-- test(test code)
         +-- java
             +-- com
@@ -225,8 +225,9 @@ it has 1000 plugins  to make wok easy
 it is written in java hence it can be portable to all major platforms
 
 
-
--cd usr/usr/
+sudo su -
+-cd /usr/local/
+cd jenkins
 cd bin
 ./startup.sh
 
