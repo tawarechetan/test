@@ -1,0 +1,308 @@
+ tar -xzf /home/centos/jdk*.tar.gz --directory /usr/local
+    2  cd /home/centos
+    3  ls
+    4  du -sh jdk-8u211-linux-x64.tar.gz
+    5  tar -xzf /home/centos/jdk*.tar.gz --directory /usr/local
+    6  ls -l /usr/local
+    7  vi /etc/profile
+    8  source /etc/profile
+    9  java -version
+   10  yum install wget vim unzip git -y
+   11  cd /usr/local
+   12  #wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-
+   13  wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+   14  tar -xzvf apache-maven-3.6.0-bin.tar.gz
+   15  mv apache-maven-3.6.0 maven
+   16  vi /etc/profile
+   17  source /etc/profile
+   18  mvn -version
+   19  cd /usr/local
+   20  mkdir myproject
+   21  cd myproject
+   22  mvn archetype:generate -DgroupId=com.myproject.app -DartifactId=myapp -Darchtype-quickstart -DinteractiveMode=false
+   23  cd /usr/local
+   24  cd myproject/
+   25  mvn archetype:generate -DgroupId=com.myproject.app -DartifactId=myapp -Darchtype-quickstart -DinteractiveMode=false
+   26  cd
+   27  mkdir mymavanproject
+   28  cd mymavanproject/
+   29  mvn archetype:generate -DgroupId=com.myproject.app -DartifactId=myapp -Darchtype-quickstart -DinteractiveMode=false
+   30  cd myapp
+   31  tree
+   32  yum install tree -y -q
+   33  tree
+   34  [root@ip-172-31-5-26 myapp]# tree
+   35  .
+   36  +-- pom.xml
+   37  +-- src
+   38      +-- main
+   39      ¦   +-- java
+   40      ¦       +-- com
+   41      ¦           +-- myproject
+   42      ¦               +-- app
+   43      ¦                   +-- App.java
+   44      +-- test
+   45          +-- java
+   46              +-- com
+   47                  +-- myproject
+   48                      +-- app
+   49                          +-- AppTest.java
+   50  ll
+   51  vim pom.xml
+   52  mvn install
+   53  ll
+   54  java -cp target/myapp-1.0-SNAPSHOT.jar com.mymavanproject.app.App
+   55  java -cp target/myapp-1.0-SNAPSHOT.jar com.myproj.app.App
+   56  java -cp target/myapp-1.0-SNAPSHOT.jar com.myproject.app.App
+   57  mvn install -X
+   58  find / -name setting.xml
+   59  find / -name settings.xml
+   60  vim /usr/local/maven/conf/settings.xml
+   61  history
+   62  sudo su -
+   63  cd usr/local
+   64  cd /usr/local/
+   65  source /etc/profile
+   66  mvn -v
+   67  tar -xzvf apache-tomcat-8.5.40.tar.gz
+   68  cd /usr/local/
+   69  tar -xzvf apache-tomcat-8.5.40.tar.gz
+   70  ls -i
+   71  wget http://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz
+   72  ls -i
+   73  tar -xzvf apache-tomcat-9.0.20.tar.gz
+   74  mv apache-tomcat-9.0.20 jenkins
+   75  cd jenkins/webapps/
+   76  wget &quot;https://updates.jenkins-ci.org/latest/jenkins.war&quot; --no-check-certificate
+   77  wget https://updates.jenkins-ci.org/latest/jenkins.war --no-check-certificate
+   78  cd ../bin/
+   79  ./startup.sh
+   80  cat /root/.jenkins/secrets/initialAdminPassword
+   81  sudo su -
+   82  vim +112 /usr/local/maven/conf/settings.xml
+   83  sudo su -
+   84  cd /usr/local/
+   85  cd ../bin
+   86  ./startup.sh
+   87  sudo su -
+   88  cd /usr/local/
+   89  ls
+   90  mvn archetype:generate -DgroupId=com.newproject.app -DartifactId=myapp -Darchtype-quickstart -DinteractiveMode=false
+   91  ls
+   92  mvn archetype:generate -DgroupId=com.myproject.app -DartifactId=newproject -Darchtype-quickstart -DinteractiveMode=false
+   93  ls
+   94  cd newproject/
+   95  tree
+   96  java -cp target/myapp-1.0-SNAPSHOT.jar com.newproject.app.App
+   97  java -cp target/myapp-1.0-SNAPSHOT.jar com.myproj.app.App
+   98  java -cp target/myapp-1.0-SNAPSHOT.jar com.newproject.app.App
+   99  mvn package
+  100  java -cp target/myapp-1.0-SNAPSHOT.jar com.newproject.app.App
+  101  mvn clean install
+  102  java -cp target/myapp-1.0-SNAPSHOT.jar com.newproject.app.App
+  103  ls
+  104  vim src/main/java/com/myproject/app/App.java
+  105  vim src/main/java/com/myproject/app/App.java
+  106   java -cp target/myapp-1.0-SNAPSHOT.jar co.app.App
+  107  java -cp target/myapp-1.0-SNAPSHOT.jar com.myproject.app.App
+  108  java -cp target/myapp-1.0-SNAPSHOT.jar com.myproj.app.App
+  109  ls
+  110  cd..
+  111  cd ..
+  112  ls
+  113  cd newproject/
+  114  ls
+  115  cd ..
+  116  cd myapp/
+  117  ls
+  118  cd ..
+  119  cd myproject/
+  120  ls
+  121   mvn archetype:generate -DgroupId=com.myproj.app -DartifactId=myapp(any new name) -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+  122   mvn archetype:generate -DgroupId=com.myproj.app -DartifactId=myapp1  -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+  123  cd myapp1/src/main/java/com/
+  124  ls
+  125  cd myproj/
+  126  ls
+  127  cd app/
+  128  ls
+  129  vim App.java
+  130  cd ..
+  131  mvn clean install
+  132  ls
+  133  java -cp target/myapp1-1.0-SNAPSHOT.jar com.myproj.app.App
+  134  rm -rf target/
+  135  ls
+  136  git clone https://github.com/tawarechetan/newproject.git
+  137  git status
+  138  pwd
+  139  git init
+  140  git clone https://github.com/tawarechetan/newproject.git
+  141  ls
+  142  remote -v
+  143  git remote -v
+  144  git remote add origin https://github.com/tawarechetan/newproject.git
+  145  git remote -v
+  146  git add pom.xml
+  147  git commit -m "adding POM.xml"
+  148  git push
+  149  git add src
+  150  git commit -m "adding Src"
+  151  git push
+  152  git init
+  153  git remote add origin https://github.com/tawarechetan/JARPROJ.git
+  154  git init
+  155  git clone https://github.com/tawarechetan/JARPROJ.git
+  156  git remote add origin https://github.com/tawarechetan/JARPROJ.git
+  157  git add pom.xml
+  158  git commit -m "adding POM"
+  159  git push
+  160  git add src
+  161  git commit -m "Adding SRC"
+  162  git push
+  163  ls
+  164  cd JARPROJ/
+  165  ls
+  166  cd..
+  167  cd ..
+  168  ls
+  169  git -f push
+  170  git  push -f
+  171  git init
+  172  git remote -v
+  173  git remote add origin https://github.com/tawarechetan/proj.git
+  174  ls
+  175  git status
+  176  git remote -v
+  177  git add .
+  178  git status
+  179  ls
+  180  git rm -f
+  181  git rm -f JARPROJ/
+  182  rm -rf JARPROJ/
+  183  rm -rf newproject/
+  184  ls
+  185  git status
+  186  git add .
+  187  git add pom.xml
+  188  git commit -m "add pom"
+  189  git status
+  190  git commit -m "add pom"
+  191  git add pom.xml
+  192  git commit -m "ADDING POM"
+  193  git add pom.xml
+  194  git commit -m "ADDING POM"
+  195  git status
+  196  git remote -v
+  197  sudo su -
+  198  ./startup.sh
+  199  cd /usr/local/
+  200  ./startup.sh
+  201  cd jenkins/
+  202  ./startup.sh
+  203  cd bin/
+  204  ./startup.sh
+  205  ps -ef | grep java
+  206  cd ~/.jenkins/
+  207  cd ..
+  208  cd ~/.jenkins/
+  209  ll nodes
+  210  ll nodes/
+  211  ll users/
+  212  ls - l
+  213  ll plugins/
+  214  ll secret
+  215  ll secret/
+  216  ll workspace/
+  217  lls jobs
+  218  ll jobs
+  219  less config.xml
+  220  history
+  221  cd /usr/local/
+  222  cd jenkins/
+  223  cd bin/
+  224  cd ~/.jenkins/
+  225  cd ..
+  226  pwd
+  227  cd /usr/local/
+  228  cd jenkins/
+  229  cd bin/
+  230  ./startup.sh
+  231  cd ~/.jenkins/
+  232  cd /usr/local/jenkins/webapps/
+  233  cd ~/.jenkins/
+  234  curl http://18.218.160.219:8080/jenkins/job/hello/build
+  235  curl http://admin:18.218.160.219:8080/jenkins/job/hello/build
+  236  curl http://admin:45871111nilu@@18.218.160.219:8080/jenkins/job/hello/build
+  237  http://18.218.160.219:8080/job/hello/build?token=TEST123
+  238  curl http://18.218.160.219:8080/job/hello/build?token=TEST123
+  239  curl http://18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  240  curl http://admin:45871111nilu\@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  241  curl http://admin:45871111nilu@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  242  curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  243  curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123 -v
+  244  curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  245  curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build
+  246  cd /usr/local/jenkins/webapps/
+  247  curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  248  curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build
+  249  curl http://admin:45871111nilu\@@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  250  curl http://admin:45871111nilu\@\@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  251  curl http://admin:45871111nilu@@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  252  curl -u admin:45871111nilu@ http://@18.218.160.219:8080/jenkins/job/hello/build?token=TEST123
+  253  curl -u admin:45871111nilu@ http://@18.218.160.219:8080/jenkins/job/hello/build
+  254  curl-X POST -u admin:45871111nilu@ http://@18.218.160.219:8080/jenkins/job/hello/build
+  255  curl -X POST -u admin:45871111nilu@ http://@18.218.160.219:8080/jenkins/job/hello/build
+  256  curl -X POST -u chetan:chetan http://@18.218.160.219:8080/jenkins/job/hello/build
+  257  history
+  258  cd /usr/local/
+  259  sudo su -
+  260  cd /usr/local/
+  261  cd bin/
+  262  ./startup.sh
+  263  cd..
+  264  cd ..
+  265  cd jenkins/
+  266  cd bin/
+  267  ./startup.sh
+  268  cd ~/.jenkins/
+  269  ls
+  270  cd /usr/local/
+  271  mvn -v
+  272  git init
+  273  ls
+  274  cd newproject/
+  275  ls
+  276  cd target/
+  277  ls
+  278  cd ..
+  279  cd myapp/
+  280  ls
+  281  git remote add origin https://github.com/tawarechetan/JARPROJ.git
+  282  git add pom.xml
+  283  git commit -m "first commit"
+  284  git push -u origin master
+  285  git add src/
+  286  git commit -m "second  commit"
+  287  git push -u origin master
+  288  git push pom.xml
+  289  ls
+  290  git add pom.xml
+  291  git commit -m "first commit"
+  292  git push -f
+  293  mvn clean install
+  294  java -cp target/myapp1-1.0-SNAPSHOT.jar com.myproject.app.App
+  295  cd /usr/local/
+  296  sudo su -
+  297  cd /usr/local/
+  298  cd jenkins/
+  299  cd bin/
+  300  ./startup.sh
+  301  ls
+  302  cd ..
+  303  ls
+  304  cd ..
+  305  cd/webapps
+  306  ls
+  307  history
+[root@ip-172-31-5-26 local]#
