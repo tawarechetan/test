@@ -1,0 +1,71 @@
+sudo su -
+  385  clear
+  386  yum install epel-release -y -q
+  387  cd /usr/local/
+  388  mkdir ansible
+  389  cd ansible/
+  390  pwd
+  391  vim hosts
+  392  vim /home/centos/secret.pem
+  393  ansible -i hosts dev -m ping
+  394  yum install ansible -y -q
+  395  ansible -i hosts dev -m ping
+  396  chmod 600 /home/centos/secret.pem
+  397  ansible -i hosts dev -m ping
+  398  cat hosts
+  399  ansible -i hosts dev -m ping -v
+  400  ansible -i hosts dev -m shell -a 'free -m'
+  401  ansible -i hosts dev -m setup -a 'filter=ansible_distribution'
+  402  vim ansi_file.yml
+  403  ansible-playbook -i hosts ansi_file.yml --syntax-check
+  404  ll
+  405  ansible-playbook -i hosts ansi_file.yml
+  406   vim ansi_file.yml
+  407  ansible-playbook -i hosts ansi_file.yml
+  408   vim ansi_file.yml
+  409  ansible -i hosts dev -m shell -a 'ls -l /temp'
+  410   vim ansi_proj.yml
+  411  ansible-playbook -i hosts ansi_proj.yml --syntax-check
+  412  ansible-playbook -i hosts ansi_proj.yml
+  413   vim ansi_proj.yml
+  414  ansible-playbook -i hosts ansi_proj.yml --syntax-check
+  415* ansible-playbook -i hosts
+  416  ansible -i hosts dev -m shell -a 'rpm -qa |grep zlib'
+  417  sudo su -
+  418  cd /usr/local/
+  419  ls
+  420  cd ansible/
+  421  ls
+  422  vim sampl_yml.yml
+  423*
+  424  vim debug.yml
+  425  ansible-playbook -i hosts debug.yml --syntax-check
+  426  ansible-playbook -i hosts debug.yml
+  427  vim ignore_errors.yml
+  428  vim debug.yml
+  429  vim ignore_errors.yml
+  430  ansible-playbook -i hosts ignore_errors.yml
+  431  vim ignore_errors.yml
+  432  ansible-playbook -i hosts ignore_errors.yml
+  433  vim ignore_errors.yml
+  434  ansible-playbook -i hosts ignore_errors.yml
+  435  vim ignore_errors.yml
+  436  ansible -i hosts ignore_errors.yml -e 'Your_name=chetan_taware'
+  437  ansible-playbook  -i hosts ignore_errors.yml -e 'Your_name=chetan_taware'
+  438  vim ignore_errors.yml
+  439  ansible-playbook  -i hosts ignore_errors.yml
+  440  history
+  441  ls
+  442  vim ignore_errors.yml
+  443  ls
+  444  vi templet1.yml
+  445  vim ansi_proj.yml
+  446  vim sampl_yml.yml
+  447  vim item.yml
+  448  ansible-playbook  -i hosts item.yml
+  449  vim item.yml
+  450  ansible-playbook  -i hosts item.yml
+  451  vim item.yml
+  452  ansible-playbook  -i hosts item.yml
+  453  vim item.yml
+  454  ansible-playbook  -i hosts item.yml
