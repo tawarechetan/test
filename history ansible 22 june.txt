@@ -1,0 +1,98 @@
+cd /usr/local/
+  512  cd ansible/
+  513  ls
+  514  ll
+  515  vim git_module.yml
+  516  ansible-playbook -i hosts git_module.yml
+  517  vim git_module.yml
+  518  ansible-playbook -i hosts git_module.yml
+  519  vim git_module.yml
+  520  ansible-playbook -i hosts git_module.yml
+  521  vim git_module.yml
+  522  ansible-playbook -i hosts git_module.yml
+  523  vim git_module.yml
+  524  ansible-playbook -i hosts git_module.yml
+  525  vim git_module.yml
+  526  ansible-playbook -i hosts git_module.yml --syntax-check
+  527  ansible-playbook -i hosts git_module.yml --syntax -check
+  528  ansible-playbook -i hosts git_module.yml
+  529  vim git_module.yml
+  530  ansible-playbook -i hosts git_module.yml --syntax -check
+  531  ansible-playbook -i hosts git_module.yml
+  532  cd /home/centos/project
+  533  clear
+  534  vim vault.yml
+  535  ansible-playbook -i hosts vault.yml --syntax -check
+  536  vim vault.yml
+  537  ansible-playbook -i hosts vault.yml --syntax -check
+  538  ansible-playbook -i hosts vault.yml
+  539  vim vault.yml
+  540  ansible-playbook -i hosts vault.yml
+  541*
+  542  makdir host_vars
+  543  mkdir host_vars
+  544  ansible-vault create host_vars/server
+  545  ansible-vault edit host_vars/server
+  546*
+  547  ansible-vault edit host_vars/server
+  548  vim hosts
+  549  ansible-vault edit host_vars/server
+  550  vim hosts
+  551  ansible-playbook -i hosts vault.yml
+  552  ansible-playbook -i hosts vault.yml --ask-vault-pass
+  553  ansible-vault edit host_vars/server
+  554  vim hosts
+  555  ansible-vault edit host_vars/server
+  556  cat hosts
+  557  yum install tree -y -q
+  558  ansible-galaxy init apache
+  559  cd apache/
+  560  tree
+  561  cd tasks/
+  562  vim main.yml
+  563  vim install.yml
+  564  vim main.yml
+  565  vim configure.yml
+  566  vim index.html
+  567  cd ..
+  568  cd handlers/
+  569  ls
+  570  vim main.yml
+  571  cd task
+  572  cd ..
+  573  cd tasks/
+  574  vim main.yml
+  575  ls
+  576  vim install.yml
+  577  cd ..
+  578  vim roles.yml
+  579  ansible-playbook -i hosts roles.yml --syntax-check
+  580  vim roles.yml
+  581  vim file_var.yml
+  582  vim roles.yml
+  583  cd apache/handlers/main.yml
+  584  cd apache/
+  585  cd handlers/
+  586  ls
+  587  vim main.yml
+  588  cd ..
+  589  cd tasks/
+  590  vim main.yml
+  591  ansible-playbook -i hosts roles.yml --syntax-check
+  592  cd ..
+  593  ansible-playbook -i hosts roles.yml --syntax-check
+  594  ansible-playbook -i hosts roles.yml
+  595  ansible-playbook -i hosts roles.yml --ask-vault-pass
+  596  cd apache/tasks/
+  597  vim configure.yml
+  598  vim main.yml
+  599  vim configure.yml
+  600  cd ..
+  601  cd files/
+  602  ls
+  603  vim index.html
+  604  vim main.yml cd ..
+  605  cd ..
+  606  ansible-playbook -i hosts roles.yml --ask-vault-pass
+  607  curl @172-31-37-159
+  608  curl @18.220.98.103
